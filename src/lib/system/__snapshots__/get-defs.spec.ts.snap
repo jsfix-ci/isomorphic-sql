@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`getDefs returns a sql string 1`] = `
+Object {
+  "columns": Array [
+    "column_name",
+    "data_type",
+    "is_nullable",
+    "column_default",
+  ],
+  "sql": "SELECT column_name, data_type, is_nullable, column_default from (
+   SELECT c.column_name,c.data_type,c.is_nullable,c.column_default
+   FROM pg_catalog.pg_tables t
+   INNER JOIN information_schema.columns c on c.table_name = t.tablename
+   WHERE schemaname = 'public'
+   ORDER BY tablename
+) def",
+}
+`;
