@@ -1,0 +1,3 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`denorm returns a sql string 1`] = `"SELECT dups.first_name, dups.last_name, person.created_at, person.id FROM (SELECT COUNT(*), first_name, last_name FROM person GROUP BY first_name, last_name HAVING COUNT(*) > 1) AS dups INNER JOIN person ON person.first_name = dups.first_name AND person.last_name = dups.last_name AND person.deleted_at = dups.deleted_at AND ((dups.deleted_at IS NULL AND person.deleted_at IS NULL) OR person.deleted_at = dups.deleted_at) ORDER BY person.created_at ASC"`;

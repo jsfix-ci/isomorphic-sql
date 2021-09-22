@@ -1,3 +1,5 @@
-# server-process
+# isomorphic-sql
 
-see [exec-rx.spec.ts](./src/lib/exec-rx.spec.ts) for useage
+```
+import { denorm } from '@onivoro/isomorphic-sql';
+
