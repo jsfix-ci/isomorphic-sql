@@ -4,6 +4,7 @@ export * from './lib/constant/table-column-names';
 
 export * from './lib/function/as-date';
 export * from './lib/function/grouper';
+export * from './lib/function/parse';
 
 export * from './lib/denorm';
 
