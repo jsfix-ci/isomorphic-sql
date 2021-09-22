@@ -1,7 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getTables returns a sql string 1`] = `
-"SELECT *
+Object {
+  "columns": Array [
+    "schemaname",
+    "tablename",
+    "tableowner",
+    "tablespace",
+    "hasindexes",
+    "hasrules",
+    "hastriggers",
+    "rowsecurity",
+  ],
+  "sql": "SELECT schemaname, tablename, tableowner, tablespace, hasindexes, hasrules, hastriggers, rowsecurity
 FROM pg_catalog.pg_tables
-WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'"
+WHERE schemaname != 'pg_catalog' AND schemaname != 'information_schema'",
+}
 `;

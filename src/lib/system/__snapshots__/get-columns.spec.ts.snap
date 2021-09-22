@@ -1,6 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`getColumns returns a sql string 1`] = `
-"SELECT *
-FROM information_schema.columns"
+Object {
+  "columns": Array [
+    "column_name",
+    "data_type",
+    "is_nullable",
+    "column_default",
+  ],
+  "sql": "SELECT column_name, data_type, is_nullable, column_default
+FROM information_schema.columns",
+}
 `;
