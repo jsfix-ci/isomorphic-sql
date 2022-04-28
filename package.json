@@ -19,8 +19,7 @@
   "dependencies": {
     "rxjs": "^6.6.3"
   },
-  "exports": {
-    ".": "./dist/index.js",
+  "exports": {   
     "mssql": "./dist/mssql/index.js",
     "pg": "./dist/pg/index.js"
   }
