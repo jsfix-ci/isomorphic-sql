@@ -1,6 +1,6 @@
 {
   "name": "@onivoro/isomorphic-sql",
-  "version": "0.9.0",
+  "version": "0.10.0",
   "repository": {
     "url": "https://github.com/onivoro/isomorphic-sql.git"
   },
@@ -19,7 +19,7 @@
   "dependencies": {
     "rxjs": "^6.6.3"
   },
-  "exports": {   
+  "exports": {
     "mssql": "./dist/mssql/index.js",
     "pg": "./dist/pg/index.js"
   }
