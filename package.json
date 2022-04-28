@@ -18,5 +18,10 @@
   },
   "dependencies": {
     "rxjs": "^6.6.3"
+  },
+  "exports": {
+    ".": "./dist/index.js",
+    "mssql": "./dist/mssql/index.js",
+    "pg": "./dist/pg/index.js"
   }
 }

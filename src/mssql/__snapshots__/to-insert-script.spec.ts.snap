@@ -3,7 +3,7 @@
 exports[`asValue returns a parenthesized value expression 1`] = `
 "
 INSERT INTO foods
-(name)
+(name, satisfaction)
 VALUES
-('hotdogs'), ('chimichangas')"
+('hotdogs', 1), ('chimichangas', 100), ('pizza', NULL);"
 `;
