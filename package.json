@@ -20,7 +20,7 @@
     "rxjs": "^6.6.3"
   },
   "exports": {
-    "mssql": "./dist/mssql/index.js",
-    "pg": "./dist/pg/index.js"
+    "mssql": "./mssql/index.js",
+    "pg": "./pg/index.js"
   }
 }
