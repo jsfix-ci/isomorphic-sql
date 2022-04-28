@@ -1,0 +1,9 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`asValue returns a parenthesized value expression 1`] = `
+"
+INSERT INTO foods
+(name)
+VALUES
+('hotdogs'), ('chimichangas')"
+`;

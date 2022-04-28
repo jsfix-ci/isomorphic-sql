@@ -8,5 +8,5 @@
     "types": ["node", "jest"]
   },
   "exclude": ["**/*.spec.ts", "dist"],
-  "include": ["**/*.ts", "src/lib/system/get-columnsts"]
+  "include": ["**/*.ts", "src/pg/system/get-columnsts"]
 }

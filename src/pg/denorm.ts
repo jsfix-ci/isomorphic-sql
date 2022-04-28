@@ -1,4 +1,4 @@
-import { and, csv } from './constant/delims';
+import { and, csv } from '../common/constant/delims';
 
 export const denorm = (table: string, nullableColumnNames: string[], nonNullableColumnNames: string[], additionalColumnsToSelect: string[] = []) => {
     const columnNames = [...nullableColumnNames, nonNullableColumnNames];

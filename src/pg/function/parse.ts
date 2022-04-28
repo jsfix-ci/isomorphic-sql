@@ -1,4 +1,4 @@
-import { pipe } from '../constant/delims';
+import { pipe } from '../../common/constant/delims';
 
 const delimeter = pipe.trim();
 

@@ -1,6 +1,6 @@
 import { columnColumnNames } from "../constant/column-column-names";
 import { tableColumnNames } from '../constant/table-column-names';
-import { newline } from "../constant/delims";
+import { newline } from "../../common/constant/delims";
 const column = 'c';
 const table = 't';
 

@@ -1,5 +1,5 @@
 import { tableColumnNames } from '../constant/table-column-names';
-import { csv, newline } from '../constant/delims';
+import { csv, newline } from '../../common/constant/delims';
 
 export const getTables = (columns = tableColumnNames) => ({
     sql: [
