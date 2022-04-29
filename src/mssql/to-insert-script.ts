@@ -1,17 +1,19 @@
 
-export function toInsertScript(table: string, values: any[]) {
+export function toInsertScript(table: string, values: any[], options?: any) {
     const columns = Object.keys(values[0]).sort();
     return `
 INSERT INTO ${table}
 (${columns.join(', ')})
 VALUES
-${getValues(columns, values)};`;
+${getValues(columns, values, options)};`;
 }
 
-function getValues(columns, values) {
+function getValues(columns, values, options?: any) {
     return values.map(v => {
         return columns.map(c => {
-            return `${extractValue(v, c)}`
+            return options && options[c] && options[c].query
+            ? `(${options[c].query(v, c)})`
+            : `${extractValue(v, c)}`
         }).join(', ')
     }).map(exp => `(${exp})`).join(', ')
 }
