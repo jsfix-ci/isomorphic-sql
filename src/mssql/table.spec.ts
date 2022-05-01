@@ -3,9 +3,9 @@ import { Table } from './table';
 describe(Table.name, () => {
     it('scripts a table definition with no constraints', () => {
         const table = Table.named('food')
-            .column('id', 'int', [1,1], true)
+            .column('id', 'int', {identity: [1,1], primaryKey: true})
             .column('name', 'nvarchar(255)')
-            .column('inventory_id', 'int');            
+            .column('inventory_id', 'int', { nullable: true });            
 
         expect(table.create()).toMatchSnapshot();
     });
