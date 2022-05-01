@@ -1,0 +1,6 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toForeignKeyConstraint returns an add-constraint expression for foreign keys 1`] = `
+"ALTER TABLE posts ADD CONSTRAINT FK_posts_author_id_author_id 
+FOREIGN KEY author_id REFERENCES author(id)"
+`;

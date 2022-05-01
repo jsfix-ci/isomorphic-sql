@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toUniqueConstraint multi column use returns an add-constraint expression for uniqueness 1`] = `"ALTER TABLE events ADD CONSTRAINT IX_events_event_date_event_location_unique UNIQUE(event_date, event_location)"`;
+
+exports[`toUniqueConstraint single column use returns an add-constraint expression for uniqueness 1`] = `"ALTER TABLE foods ADD CONSTRAINT IX_foods_plu_unique UNIQUE(plu)"`;

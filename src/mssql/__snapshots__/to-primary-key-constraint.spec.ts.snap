@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`toPrimaryKeyConstraint returns an add-constraint expression for a composite primary key 1`] = `
+"ALTER TABLE posts ADD CONSTRAINT PK_posts_slug_author_id 
+PRIMARY KEY (slug, author_id)"
+`;
+
+exports[`toPrimaryKeyConstraint returns an add-constraint expression for a single primary key 1`] = `
+"ALTER TABLE posts ADD CONSTRAINT PK_posts_slug 
+PRIMARY KEY (slug)"
+`;
