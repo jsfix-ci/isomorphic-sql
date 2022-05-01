@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Table scripts a table definition with constraints 1`] = `
+"CREATE TABLE food (
+  id int  ,
+  name nvarchar(255)  ,
+  inventory_id int  
+);
+        
+ALTER TABLE food ADD CONSTRAINT PK_food_id 
+PRIMARY KEY (id);
+ALTER TABLE food ADD CONSTRAINT FK_food_inventory_id_inventory_id 
+FOREIGN KEY inventory_id REFERENCES inventory(id)
+"
+`;
+
+exports[`Table scripts a table definition with no constraints 1`] = `
+"CREATE TABLE food (
+  id int PRIMARY KEY IDENTITY(1, 1),
+  name nvarchar(255)  ,
+  inventory_id int  
+);
+        
+
+"
+`;
